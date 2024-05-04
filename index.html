@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/misc/Youtube_logo.png">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-88eGHjbH6ScdwSriJ0u8m7RJ/5+7Rn8eNNaV+YlYT29lLqn/qfnb0XE8aJW+yPG6"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: black">
+    <div class="container-fluid" style="position: fixed; z-index: 10; background-color: black;">
+      <div class="row">
+        <div class="col-3 d-flex flex-row align-items-center">
+          <div class="hamburger-div">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="white"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </div>
+          <div>
+            <img class="yt-logo" src="images/misc/train.webp" alt="Logo" />
+          </div>
+        </div>
+        <div
+          class="col-6 top-padding d-flex flex-row align-items-center justify-content-center search-main-div"
+        >
+          <div class="search-box">
+            <input
+              type="text"
+              class="form-control search-box-color"
+              placeholder="Search"
+            />
+          </div>
+          <div class="search-icon-div" title="Search">
+            <img src="images/misc/search.png" alt="" class="search-icon-img" />
+          </div>
+          <div class="mic-icon-div" title="Search with your voice">
+            <img src="images/misc/mic.png" alt="" class="mic-icon-img" />
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2 d-flex align-items-center justify-content-end">
+          <div class="upload-circle-div">
+            <img
+              src="images/misc/upload-icon.png"
+              alt=""
+              class="upload-icon-img"
+            />
+          </div>
+          <div class="notification-circle-div">
+            <img
+              src="images/misc/notification.png"
+              alt=""
+              class="notification-img"
+            />
+          </div>
+          <div class="account-circle-div">
+            <img
+              src="images/misc/user-account.png"
+              alt=""
+              class="user-account-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="side-nav">
+      <div class="side-nav1">
+        <div class="home-div">
+          <img class="home-img" src="images/misc/home.png" alt="">
+          <span class="home-span">Home</span>
+        </div>
+        <div class="shorts-div">
+          <img class="shorts-img" src="images/misc/shorts.png" alt="">
+          <span class="shorts-span">Shorts</span>
+        </div>
+        <div class="sub-div">
+          <img class="sub-img" src="images/misc/subscription.png" alt="">
+          <span class="sub-span">Subscriptions</span>
+        </div>
+        <div class="music-div">
+          <img class="music-img" src="images/misc/music.png" alt="">
+          <span class="music-span">YouTube Music</span>
+        </div>
+      </div>
+
+      <div class="div-nav2">
+        <div class="nav2-heading-div">
+          <span class="nav2-heading-span">You</span>
+          <img class="nav2-heading-img" src="images/misc/arrow.png" alt="">
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/channel.png" alt="">
+          <span class="channel-span">Your channel</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/arrow.png" alt="">
+          <span class="channel-span">History</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/shorts.png" alt="">
+          <span class="channel-span">Playlists</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/subscription.png" alt="">
+          <span class="channel-span">Your videos</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/music.png" alt="">
+          <span class="channel-span">Watch Later</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/arrow.png" alt="">
+          <span class="channel-span">Liked videos</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/1.png" alt="">
+          <span class="channel-span">Downloads/span>
+        </div>
+      </div>
+
+      <div class="div-nav3">
+        <div class="nav3-heading-div">
+          <span class="nav3-heading-span">Subscriptions</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img-side" src="images/channelpics/1.jpg" alt="">
+          <span class="channel-span">Mary Queen</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img-side" src="images/channelpics/2.jpg" alt="">
+          <span class="channel-span">WeCode Malayalam</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img-side" src="images/channelpics/3.jpg" alt="">
+          <span class="channel-span">Meenakshi Anoop</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img-side" src="images/channelpics/4.jpg" alt="">
+          <span class="channel-span">Flowers Comedy</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img-side" src="images/channelpics/5.jpg" alt="">
+          <span class="channel-span">Artist Sachin</span>
+        </div>
+      </div>
+
+      <div class="div-nav2">
+        <div class="nav2-heading-div">
+          <span class="nav2-heading-span">Explore</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/channel.png" alt="">
+          <span class="channel-span">Your channel</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/arrow.png" alt="">
+          <span class="channel-span">History</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/shorts.png" alt="">
+          <span class="channel-span">Playlists</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/subscription.png" alt="">
+          <span class="channel-span">Your videos</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/music.png" alt="">
+          <span class="channel-span">Watch Later</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/arrow.png" alt="">
+          <span class="channel-span">Liked videos</span>
+        </div>
+        <div class="channel-div">
+          <img class="channel-img" src="images/misc/1.png" alt="">
+          <span class="channel-span">Downloads/span>
+        </div>
+      </div>
+  </nav>
+
+  <div class="small-side-nav">
+    <div>
+      <div class="small-home-div d-flex flex-column">
+        <img class="small-home-img" src="images/misc/home.png" alt="">
+        <span class="small-home-span">Home</span>
+      </div>
+      <div class="small-shorts-div d-flex flex-column">
+        <img class="small-shorts-img" src="images/misc/shorts.png" alt="">
+        <span class="small-shorts-span">Shorts</span>
+      </div>
+      <div class="small-sub-div d-flex flex-column">
+        <img class="small-sub-img" src="images/misc/subscription.png" alt="">
+        <span class="small-sub-span">Subscriptions</span>
+      </div>
+      <div class="small-music-div d-flex flex-column">
+        <img class="small-music-img" src="images/misc/music.png" alt="">
+        <span class="small-music-span">YouTube Music</span>
+      </div>
+      <div class="small-you-div d-flex flex-column">
+        <img class="small-you-img" src="images/misc/arrow.png" alt="">
+        <span class="small-you-span">You</span>
+      </div>
+      <div class="small-downloads-div d-flex flex-column">
+        <img class="small-downloads-img" src="images/misc/1.png" alt="">
+        <span class="small-downloads-span">Downloads</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid main-cont">
+    <main class="videos row">
+      <section class="videos-section col-xs-12 col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+        <img class="thumbnail-img" src="images/thumbnails/1.webp" alt="Thumbnail" />
+        <div class="video-description-div">
+          <div class="channel-pic-div">
+            <img class="channelpic-img" src="images/channelpics/1.jpg" alt="" />
+          </div>
+          <div class="video-description">
+            <p class="video-name">Holy Qurbana on Tuesday 16-4-24</p>
+            <p class="channel-name">Mary Queen</p>
+            <p class="video-details">92 views <span class="middle-dot">&#xb7</span> Streamed 2 hours ago</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="videos-section col-xs-12 col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+        <img class="thumbnail-img" src="images/thumbnails/3.webp" alt="Thumbnail" />
+        <div class="video-description-div">
+          <div class="channel-pic-div">
+            <img class="channelpic-img" src="images/channelpics/3.jpg" alt="" />
+          </div>
+          <div class="video-description">
+            <p class="video-name">സ്നേഹസ്വരൂപനാം നാഥാ | snehaswaroopanam nadha | മ്യൂസിക്...</p>
+            <p class="channel-name">Tau Vision</p>
+            <p class="video-details">941 views <span class="middle-dot">&#xb7</span> 8 months ago</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="videos-section col-xs-12 col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+        <img class="thumbnail-img" src="images/thumbnails/2.jpg" alt="Thumbnail" />
+        <div class="video-description-div">
+          <div class="channel-pic-div">
+            <img class="channelpic-img" src="images/channelpics/2.jpg" alt="" />
+          </div>
+          <div class="video-description">
+            <p class="video-name">Nenjakame | Sreya Collective | Musical Band</p>
+            <p class="channel-name">Sreya Collective Official</p>
+            <p class="video-details">1.1M views <span class="middle-dot">&#xb7</span> 2 years ago</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="videos-section col-xs-12 col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+        <img class="thumbnail-img" src="images/thumbnails/4.webp" alt="Thumbnail" />
+        <div class="video-description-div">
+          <div class="channel-pic-div">
+            <img class="channelpic-img" src="images/channelpics/4.jpg" alt="" />
+          </div>
+          <div class="video-description">
+            <p class="video-name">World Art Day Special Live Meeting</p>
+            <p class="channel-name">Artist Sachin 
+              <div class="tick-div">
+                <div class="circle">
+                  &#x2713;
+                </div>
+              </div>
+            </p>
+            <p class="video-details">697 views <span class="middle-dot">&#xb7;</span> Streamed 19 hours ago</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="videos-section col-xs-12 col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+        <img class="thumbnail-img" src="images/thumbnails/5.webp" alt="Thumbnail" />
+        <div class="video-description-div">
+          <div class="channel-pic-div">
+            <img class="channelpic-img" src="images/channelpics/5.jpg" alt="" />
+          </div>
+          <div class="video-description">
+            <p class="video-name">Can you take this 2450 Chess Hippo down?</p>
+            <p class="channel-name">NM Robert Ramirez</p>
+            <p class="video-details">22 watching</p>
+            <div class="live-div">LIVE </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="videos-section col-xs-12 col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+        <img class="thumbnail-img" src="images/thumbnails/9.jpg" alt="Thumbnail" />
+        <div class="video-description-div">
+          <div class="channel-pic-div">
+            <img class="channelpic-img" src="images/channelpics/9.jpg" alt="" />
+          </div>
+          <div class="video-description">
+            <p class="video-name">Daivam Pirakkunnu | ദൈവം പിറക്കുന്നു | Malayalam Christmas Cover Song</p>
+            <p class="channel-name">Appanum Makkalum</p>
+            <p class="video-details">523 views <span class="middle-dot">&#xb7</span> 3 years ago</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="videos-section col-xs-12 col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+        <img class="thumbnail-img" src="images/thumbnails/6.webp" alt="Thumbnail" />
+        <div class="video-description-div">
+          <div class="channel-pic-div">
+            <img class="channelpic-img" src="images/channelpics/6.jpg" alt="" />
+          </div>
+          <div class="video-description">
+            <p class="video-name">Mozart Concerto no. 23 in A major k. 488 / Elisey Mysin / Makhachkala</p>
+            <p class="channel-name">Elisey Mysin</p>
+            <p class="video-details">5.1M views <span class="middle-dot">&#xb7</span> 2 years ago</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="videos-section col-xs-12 col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+        <img class="thumbnail-img" src="images/thumbnails/7.webp" alt="Thumbnail" />
+        <div class="video-description-div">
+          <div class="channel-pic-div">
+            <img class="channelpic-img" src="images/channelpics/7.jpg" alt="" />
+          </div>
+          <div class="video-description">
+            <p class="video-name">&#128077; Acrylic Painting - Spring Landscape / Easy Art / Drawing Lessons / Satisfying...</p>
+            <p class="channel-name">Mary Queen</p>
+            <p class="video-details">56K views <span class="middle-dot">&#xb7</span> 1 month ago</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="videos-section col-xs-12 col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+        <img class="thumbnail-img" src="images/thumbnails/8.webp" alt="Thumbnail" />
+        <div class="video-description-div">
+          <div class="channel-pic-div">
+            <img class="channelpic-img" src="images/channelpics/8.jpg" alt="" />
+          </div>
+          <div class="video-description">
+            <p class="video-name">Top 50 Melodies Beautiful Guitar Music To Soothe Your Heart &#127926; &#x1F496; Relaxing...</p>
+            <p class="channel-name">Guitar Instrumental Music</p>
+            <p class="video-details">32K views <span class="middle-dot">&#xb7</span> 2 weeks ago</p>
+          </div>
+        </div>
+      </section>
+  
+      
+  
+    </main>
+  </div>
+
+ 
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
